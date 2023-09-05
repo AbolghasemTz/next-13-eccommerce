@@ -11,7 +11,7 @@ import Image from "next/image";
 import AuthPage from "../(user)/auth/page";
 
 import { useGetUser } from "../hooks/useAuth";
-
+import { loguot } from "../services/AuthServices";
 function HeaderMobile() {
   const [showMenu, setShowMenu] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,7 @@ function HeaderMobile() {
 
   const { data } = useGetUser();
   const { user, cart } = data || {};
-  const logoutHandler =async()=>{
+  const logoutHandler = async() => {
     await loguot();
     document.location.href = "/"
   }

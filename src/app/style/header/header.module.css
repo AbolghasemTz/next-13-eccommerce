@@ -41,7 +41,7 @@
     }
 
     .show_menu{
-        @apply absolute md:hidden p-0 top-20 left-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-start
+        @apply absolute md:hidden p-0 top-14 left-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-start
     }
     .show_menuDrower{
         @apply w-[60%] h-full bg-[#E5F2E9] flex flex-col items-center px-4 py-10 relative

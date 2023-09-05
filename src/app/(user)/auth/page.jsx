@@ -53,7 +53,7 @@ function AuthPage({ isOpenModal, onClose }) {
     e.preventDefault();
     try {
       const { message } = await mutateCheckOtp({ phoneNumber, otp });
-      toast.success(message);
+      toast.success("کد تایید شد.");
       if (user?.isActive) {
         router.push("/");
         
@@ -105,7 +105,7 @@ function AuthPage({ isOpenModal, onClose }) {
   return (
     <>
     {!user?.isVerifiedPhoneNumber && <Modal isOpenModal={isOpenModal} onClose={onClose}>
-      <div className="md:w-[392px]  md:h-[302px] w-[95vw] ">
+      <div className="md:w-[392px]  md:h-[340px] w-[95vw] ">
         <div className="px-[24px] md:block hidden">
           <div className="flex justify-between items-center pt-[24px] pb-[16px]">
             {step === 2 ? (
@@ -117,12 +117,12 @@ function AuthPage({ isOpenModal, onClose }) {
                 />
               </div>
             ) : (
-              <div className="" onClick={() => setStep((s) => s + 1)}>
-                x
+              <div >
+                
               </div>
             )}
             <div>
-              <Image src="/svg/logo.svg" width={102} height={32} alt="logo" />
+              <Image src="/image/logo.png" width={60} height={40} alt="logo" />
             </div>
             <div onClick={() => onClose(false)}>
               <IoMdClose size={24} color="#717171" />
@@ -187,9 +187,9 @@ function AuthPage({ isOpenModal, onClose }) {
             </div>
           </div>
           <div className="flex justify-center mt-[112px]">
-            <Image src="/svg/logo.svg" width={148} height={71} alt="logo" />
+            {/* <Image src="/image/logo.png" width={20} height={20} alt="logo" /> */}
           </div>
-          <div className="text-center mt-[80px]">
+          <div className="text-center mt-[20px]">
             {step === 1 ? (
               <h3 className="text-[#353535] text-[16px] font-[400] ">
                 ورود / ثبت نام

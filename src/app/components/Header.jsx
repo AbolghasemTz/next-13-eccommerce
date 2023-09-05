@@ -21,7 +21,7 @@ function Header() {
 
   const { data } = useGetUser();
   const { user, cart } = data || {};
-  const logoutHandler =async()=>{
+  const logoutHandler = async () => {
     await loguot();
     document.location.href = "/"
   }

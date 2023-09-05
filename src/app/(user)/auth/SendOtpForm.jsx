@@ -9,7 +9,7 @@ function SendOtpForm({ isLoading,onSubmit,phoneNumber,onChange }) {
         <TextField label="شماره همراه" name="phoneNumber" value={phoneNumber} onChange={onChange}  />
 
         {isLoading ? (
-          <p className="text-center btn">Loading ...</p>
+          <p className="flex justify-center items-center md:w-[344px] w-full h-[40px]  btn">صبر کنید...</p>
         ) : (
           <button type="submit" className="md:w-[344px] w-full h-[40px] btn">
             ادامه
