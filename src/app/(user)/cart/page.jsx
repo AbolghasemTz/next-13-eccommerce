@@ -12,11 +12,11 @@ function page() {
   if (isLoading) return <Loading />;
   if (!user || !data)
     return (
-      <div className="container lg:max-w-screen-lg">
+      <div className="container lg:max-w-screen-lg min-h-screen md:mr-4 md:text-right text-center mt-9">
         <p className="font-bold mb-4">برای مشاهده سبد خرید لطفا اقدام کنید</p>
-        <Link href="/auth" className="text-lg font-bold text-primary-900">
-          رفتن به صفحه لاگین؟
-        </Link>
+        <p className="text-lg font-bold text-primary-900">
+          .لطفا وارد حساب کاربری خود شوید
+        </p>
       </div>
     );
 

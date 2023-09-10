@@ -7,14 +7,14 @@ import ContentInfo from "./ContentInfo";
 import { getOneProductsBySlug, getProducts } from "../../../services/ProductServices";
 import { toPersianNumbersWithComma } from "../../../utils/toPersianNumber";
 export const dynamic = "force-static";
-// export const dynamicParams = false;
+export const dynamicParams = false;
 
 async function page({ params }) {
   const { slug } = params;
   const { product } = await getOneProductsBySlug(slug);
 
   return (
-    <div classNameName="">
+    <div className="">
       <RoadPage product={product} />
 
       <div className="md:px-4 md:mt-6 lg:px-6 container mx-auto max-w-screen-2xl grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8">

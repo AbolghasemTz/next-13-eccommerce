@@ -18,12 +18,13 @@ function CheckOtpForm({ otp, setOtp, onBack, time, onSubmit }) {
             borderRadius: "0.5rem",
             color: "#353535",
             outline: "none",
+            direction:"ltr"
           }}
-          containerStyle="flex gap-x-2 justify-center"
+          containerStyle="flex flex-row-reverse gap-x-2 justify-center"
           renderSeparator={<span>-</span>}
           renderInput={(props) => <input type="number" {...props} />}
         />
-        <div className="flex justify-between items-center text-[10px] mt-[8px] text-[#717171] md:px-0 px-2">
+        <div className="flex justify-between items-center text-[10px] mt-[8px] text-[#717171] md:px-0 px-2 ">
           {time > 0 ? (
             <p>
               <span>{time}</span> تادریافت کد مجدد

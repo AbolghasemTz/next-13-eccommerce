@@ -7,7 +7,7 @@ import AppleBrand from "./AppleBrand";
 export const daynamic = "force-dynamic"; //uq to cache store ssr
 
 function HomeProduct({ products }) {
-  console.log(products);
+  
   return (
     <div className=" mb-9">
       <div className="bg-white">
