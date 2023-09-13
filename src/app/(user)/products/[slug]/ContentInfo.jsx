@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import AddToCart from "./AddToCart";
 import { toPersianNumbersWithComma } from "../../../utils/toPersianNumber";
+import { MdDone } from "react-icons/md";
 
 function ContentInfo({ product }) {
   return (
@@ -60,52 +61,13 @@ function ContentInfo({ product }) {
               <span className="text-slate-800 md:!text-xl">انتخاب رنگ :</span>
               <div className="flex items-center md:mr-4">
                 <div className="w-7 h-7 sm:w-9 sm:h-9 flex items-center justify-center rounded-full cursor-pointer bg-red-400 border-2 border-white">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 sm:w-6 sm:h-6 stroke-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
+                <MdDone size={18} color="#fff" />
                 </div>
                 <div className="w-7 h-7 sm:w-9 sm:h-9 flex items-center justify-center rounded-full cursor-pointer bg-blue-400 border-2 border-white -mr-1.5">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 sm:w-6 sm:h-6 stroke-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
+              
                 </div>
                 <div className="w-7 h-7 sm:w-9 sm:h-9 flex items-center justify-center rounded-full cursor-pointer bg-green-400 border-2 border-white -mr-1.5">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 sm:w-6 sm:h-6 stroke-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
+          
                 </div>
               </div>
             </div>
@@ -114,50 +76,7 @@ function ContentInfo({ product }) {
               <div className="flex items-center flex-auto">
                 <div className="flex items-center">
                   <span>
-                    <svg
-                      width="20"
-                      height="19"
-                      viewBox="0 0 20 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="12" cy="8" r="8" fill="#E2E2E2" />
-                      <path
-                        d="M1.75586 11.5449V14.1641C1.75586 16.7833 2.80586 17.8333 5.42503 17.8333H8.56919C11.1884 17.8333 12.2384 16.7833 12.2384 14.1641V11.5449"
-                        stroke="#222F5D"
-                        stroke-width="0.875"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M7.00012 11.9993C8.06762 11.9993 8.85512 11.1302 8.75012 10.0627L8.36512 6.16602H5.64095L5.25012 10.0627C5.14512 11.1302 5.93262 11.9993 7.00012 11.9993Z"
-                        stroke="#222F5D"
-                        stroke-width="0.875"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M10.681 11.9993C11.8593 11.9993 12.7226 11.0427 12.606 9.87018L12.4426 8.26602C12.2326 6.74935 11.6493 6.16602 10.121 6.16602H8.3418L8.75013 10.2552C8.8493 11.2177 9.71846 11.9993 10.681 11.9993Z"
-                        stroke="#222F5D"
-                        stroke-width="0.875"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M3.29005 11.9993C4.25255 11.9993 5.12172 11.2177 5.21505 10.2552L5.34339 8.96602L5.62339 6.16602H3.84422C2.31589 6.16602 1.73255 6.74935 1.52255 8.26602L1.36505 9.87018C1.24839 11.0427 2.11172 11.9993 3.29005 11.9993Z"
-                        stroke="#222F5D"
-                        stroke-width="0.875"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M7.00008 14.916C6.02591 14.916 5.54175 15.4002 5.54175 16.3743V17.8327H8.45841V16.3743C8.45841 15.4002 7.97425 14.916 7.00008 14.916Z"
-                        stroke="#222F5D"
-                        stroke-width="0.875"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                   
                   </span>
                   <span className="mr-1 font-medium">فروشنده : </span>
                 </div>
@@ -166,21 +85,7 @@ function ContentInfo({ product }) {
               <div className="flex items-center flex-auto">
                 <div className="flex items-center">
                   <span>
-                    <svg
-                      width="21"
-                      height="19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="13" cy="8" r="8" fill="#E2E2E2" />
-                      <path
-                        d="M7.43 3.58 3.897 4.91c-.815.305-1.48 1.268-1.48 2.132v5.263c0 .836.552 1.934 1.225 2.437l3.046 2.274c.999.75 2.642.75 3.64 0l3.046-2.274c.673-.503 1.226-1.6 1.226-2.437V7.043c0-.87-.666-1.834-1.48-2.139L9.583 3.58c-.602-.22-1.566-.22-2.153 0Z"
-                        stroke="#222F5D"
-                        stroke-width="1.063"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                   
                   </span>
                   <span className="mr-1 font-medium">گارانتی : </span>
                 </div>

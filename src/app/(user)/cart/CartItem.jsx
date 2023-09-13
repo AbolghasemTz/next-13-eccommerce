@@ -38,45 +38,45 @@ function CartItem({ cartItem }) {
   };
 
   return (
-    <div class="bg-white rounded-lg  p-3 flex items-stretch shadow-lg justify-between">
-      <div class="w-16 md:w-24 h-auto">
+    <div className="bg-white rounded-lg  p-3 flex items-stretch shadow-lg justify-between">
+      <div className="w-16 md:w-24 h-auto">
         <Image
-          class="w-full h-auto"
+          className="w-full h-auto"
           src={cartItem.imageLink}
           alt="product"
           width={200}
           height={200}
         />
       </div>
-      <div class="flex flex-col justify-between text-xs md:text-xl flex-1">
-        <span class="font-bold text-slate-800">{cartItem.title}</span>
-        <span class="text-orange-600 font-medium ">
+      <div className="flex flex-col justify-between text-xs md:text-xl flex-1">
+        <span className="font-bold text-slate-800">{cartItem.title}</span>
+        <span className="text-orange-600 font-medium ">
           {toPersianNumbersWithComma(cartItem.price)} تومان
         </span>
       </div>
-      <div class="flex flex-col justify-between items-end">
+      <div className="flex flex-col justify-between items-end">
         <span></span>
-        <div class="flex items-center gap-x-1 md:gap-x-3">
+        <div className="flex items-center gap-x-1 md:gap-x-3">
           <button
             onClick={addToCartHandler}
-            class="flex cursor-pointer items-center justify-center rounded-full bg-gray-200 w-6 h-6 md:w-7 md:h-7"
+            className="flex cursor-pointer items-center justify-center rounded-full bg-gray-200 w-6 h-6 md:w-7 md:h-7"
           >
             <BsPlusLg size={18} />
           </button>
-          <span class="flex items-center justify-center border border-orange-500 rounded w-3 h-5 md:w-6 md:h-7 text-xs md:text-base">
+          <span className="flex items-center justify-center border border-orange-500 rounded w-3 h-5 md:w-6 md:h-7 text-xs md:text-base">
             {toPersianNumbers(cartItem.quantity)}
           </span>
 
           <button
             onClick={decrementHandler}
-            class=""
+          
           >
             {cartItem.quantity === 1 ? (
               <span className="bg-rose-100  rounded-full flex cursor-pointer items-center justify-center  w-6 h-6 md:w-7 md:h-7">
                 <BsTrash size={17} color="#f43f5e" />
               </span>
             ) : (
-              <span class="bg-orange-200  rounded-full flex cursor-pointer items-center justify-center  w-6 h-6 md:w-7 md:h-7">
+              <span className="bg-orange-200  rounded-full flex cursor-pointer items-center justify-center  w-6 h-6 md:w-7 md:h-7">
                 <AiOutlineMinus size={18} />{" "}
               </span>
             )}

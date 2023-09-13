@@ -12,7 +12,7 @@ function page() {
   const router = useRouter()
   const {data,mutateAsync} = useMutation({mutationFn: completeProfile})
 const {user} = data || {}
-console.log(user);
+// console.log(user);
   const submitHandler = async(e) => {
     e.preventDefault();
     try {

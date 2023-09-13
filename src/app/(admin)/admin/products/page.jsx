@@ -8,7 +8,7 @@ import { useGetProducts } from '../../../hooks/useProduct';
 function page() {
   const {isLoading,data} =  useGetProducts();
   const {products} = data || {}
-console.log(products);
+// console.log(products);
   if(isLoading) return <Loading />
   return (
     <div>

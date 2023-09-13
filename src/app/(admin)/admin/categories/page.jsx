@@ -8,7 +8,7 @@ import { useGetCategories } from '../../../hooks/useCategories';
 function page() {
  const {isLoading,data} =  useGetCategories();
   const {categories} = data || {}
-console.log(categories);
+// console.log(categories);
   if(isLoading) return <Loading />
   return (
     <div>

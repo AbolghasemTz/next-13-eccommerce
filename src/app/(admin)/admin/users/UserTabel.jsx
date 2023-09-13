@@ -6,7 +6,7 @@ import { userListTabelHeads } from '../../../constant/tableHeads';
 import { toLocalString } from '../../../utils/toLocalString';
 
 function UserTabel({users}) {
-    console.log(users);
+    // console.log(users);
   return (
     <div className='shadow-sm overflow-auto my-8'>
       <table className="border-collapse table-auto w-full min-w-[800px] text-sm">

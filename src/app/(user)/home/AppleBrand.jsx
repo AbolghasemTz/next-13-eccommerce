@@ -4,9 +4,10 @@ import Link from "next/link";
 
 import LikeProduct from "../products/LikeProducts";
 import { toPersianNumbersWithComma } from "../../utils/toPersianNumber";
+import { MdDone } from "react-icons/md";
 
 function AppleBrand({ products }) {
-  console.log(products);
+  // console.log(products);
   return (
     <div className="grid gap-x-2 gap-y-8 grid-cols-2 px-4 md:px-4  md:grid-cols-2 lg:grid-cols-4 sm:gap-x-4 md:gap-x-5 md:gap-y-10">
       {products
@@ -33,21 +34,7 @@ function AppleBrand({ products }) {
                 </span>
                 <div className="flex items-center">
                   <div className="ring-2 ring-red-300 w-6 h-6 flex justify-center items-center rounded-full cursor-pointer bg-red-500 border-2">
-                    <svg
-                      x-show="color= 'red'"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      className="w-4 h-4 stroke-white"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M4.5 12.75l6 6 9-13.5"
-                      />
-                    </svg>
+                  <MdDone size={18} color="#fff" />
                   </div>
                   <div className="w-6 h-6 justify-center items-center rounded-full cursor-pointer bg-blue-500 -mr-1.5 border-2 border-white"></div>
                   <div className="w-6 h-6 justify-center items-center rounded-full cursor-pointer bg-green-500 -mr-1.5 border-2 border-white"></div>

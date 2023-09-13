@@ -31,8 +31,8 @@ function page() {
     );
 
   return (
-    <div class="flex items-start lg:flex-row flex-col container mx-auto 2xl:max-w-screen-2xl mt-6">
-      <div class="flex flex-col gap-y-2 md:gap-y-4 px-4 sm:flex-1 w-full">
+    <div className="flex items-start lg:flex-row flex-col container mx-auto 2xl:max-w-screen-2xl mt-6">
+      <div className="flex flex-col gap-y-2 md:gap-y-4 px-4 sm:flex-1 w-full">
         {cart &&
           cart.productDetail?.map((item) => {
             return <CartItem key={item._id} cartItem={item} />;

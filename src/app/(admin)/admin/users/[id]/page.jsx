@@ -4,7 +4,7 @@ import { useParams } from 'next/navigation'
 
 function page() {
     const {id} = useParams();
-    console.log(id,"omid");
+    // console.log(id,"omid");
   return (
     <div>
       

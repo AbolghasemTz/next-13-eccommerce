@@ -13,7 +13,7 @@ function Checkbox({label,id,name,value,onChange,checked}) {
 
       className="form-checkbox rounded text-[#417F56]  focus:ring-[#417F56]"
       />
-      <span class="mr-3">{label}</span></label>
+      <span className="mr-3">{label}</span></label>
     </div>
   );
 }
